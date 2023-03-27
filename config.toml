@@ -7,14 +7,14 @@ summaryLength = 100
 title = "Momories"
 
 [params]
-	dateFormat = "2006 January 02"
+	  dateFormat = "2006 January 02"
     project_name = "Snippets to Share"
     project_tagline = "Only time will tell."
 
     # Header colors
-	header_heading_color = "#fff"
-	header_background_color = "#159957"
-	header_background_color_secondary = "#155799"
+	  header_heading_color = "#fff"
+	  header_background_color = "#159957"
+	  header_background_color_secondary = "#155799"
 
     # Text colors
     section_headings_color = "#159957"
@@ -35,17 +35,32 @@ title = "Momories"
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+  
+    [markup.highlight]
+        anchorLineNos = false
+        codeFences = true
+        guessSyntax = false
+        hl_Lines = ''
+        hl_inline = false
+        lineAnchors = ''
+        lineNoStart = 1
+        lineNos = false
+        lineNumbersInTable = true
+        noClasses = true
+        noHl = false
+        style = 'pygments'
+        tabWidth = 4
 
 [menu]
-	[[menu.nav]]
-		name = "Notes"
-		url = "/"
-		weight = 1
-    [[menu.nav]]
-    name = "Tags"
-		url = "/tags/"
-		weight = 2
-    [[menu.nav]]
-		name = "About"
-		url = "/about/"
-		weight = 3
+	  [[menu.nav]]
+        name = "Notes"
+        url = "/notes/"
+        weight = 1
+        [[menu.nav]]
+        name = "Tags"
+        url = "/tags/"
+        weight = 2
+        [[menu.nav]]
+        name = "About"
+        url = "/about/"
+        weight = 3

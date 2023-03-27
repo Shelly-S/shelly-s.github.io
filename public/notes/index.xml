@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Momories</title>
-    <link>https://shelly-s.github.io/</link>
-    <description>Recent content on Momories</description>
+    <title>Notes on Momories</title>
+    <link>https://shelly-s.github.io/notes/</link>
+    <description>Recent content in Notes on Momories</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 15 Mar 2023 20:06:22 +0800</lastBuildDate><atom:link href="https://shelly-s.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Mar 2023 20:06:22 +0800</lastBuildDate><atom:link href="https://shelly-s.github.io/notes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Run Prolog With Jupyter Notebook</title>
       <link>https://shelly-s.github.io/notes/run-prolog-with-jupyter-notebook/</link>
@@ -14,15 +14,6 @@
       
       <guid>https://shelly-s.github.io/notes/run-prolog-with-jupyter-notebook/</guid>
       <description>在 Jupyter Notebook 中运行 Prolog 需要安装相应的 kernel，使用的是 这个实现，环境为 WSL2(Ubuntu22.04.2 LTS) on Win11。 安装稳定版本 Prolog，参见 这个链接； sudo apt-get install software-properties-common sudo apt-add-repository ppa:swi-prolog/stable sudo apt-get update sudo apt-get install swi-prolog 安装 Python3 和 Python3-pip(注：使用 conda 则忽略</description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://shelly-s.github.io/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://shelly-s.github.io/about/</guid>
-      <description> Made with Hugo, themed by Cayman, configured MathJax support with this link and Mermaid support with this link. </description>
     </item>
     
   </channel>

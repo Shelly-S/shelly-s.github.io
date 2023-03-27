@@ -2,27 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.org/categories/</loc>
+    <loc>https://shelly-s.github.io/categories/</loc>
     <lastmod>2023-03-15T20:06:22+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/</loc>
+    <loc>https://shelly-s.github.io/</loc>
     <lastmod>2023-03-15T20:06:22+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/post/</loc>
+    <loc>https://shelly-s.github.io/notes/</loc>
     <lastmod>2023-03-15T20:06:22+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/categories/programming/</loc>
+    <loc>https://shelly-s.github.io/categories/programming/</loc>
     <lastmod>2023-03-15T20:06:22+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/prolog/</loc>
+    <loc>https://shelly-s.github.io/tags/prolog/</loc>
     <lastmod>2023-03-15T20:06:22+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/post/run-prolog-with-jupyter-notebook/</loc>
+    <loc>https://shelly-s.github.io/notes/run-prolog-with-jupyter-notebook/</loc>
     <lastmod>2023-03-15T20:06:22+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/tags/</loc>
+    <loc>https://shelly-s.github.io/tags/</loc>
     <lastmod>2023-03-15T20:06:22+08:00</lastmod>
   </url><url>
-    <loc>https://example.org/about/</loc>
+    <loc>https://shelly-s.github.io/about/</loc>
   </url>
 </urlset>

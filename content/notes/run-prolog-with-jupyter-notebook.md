@@ -23,14 +23,14 @@ sudo apt-get install swi-prolog
 
 - 安装 `requests` 库和 `notebook` 库；
 
-```python
+```bash
 python3 -m pip install requests
 python3 -m pip install notebook
 ```
 
 - 安装 kernel；
 
-```python
+```bash
 python3 -m pip install prolog_kernel
 python3 -m prolog_kernel.install
 ```
