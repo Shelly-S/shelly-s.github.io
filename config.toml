@@ -7,14 +7,14 @@ summaryLength = 100
 title = "Momories"
 
 [params]
-	  dateFormat = "2006 January 02"
+	dateFormat = "2006 January 02"
     project_name = "Snippets to Share"
     project_tagline = "Only time will tell."
 
     # Header colors
-	  header_heading_color = "#fff"
-	  header_background_color = "#159957"
-	  header_background_color_secondary = "#155799"
+	header_heading_color = "#fff"
+	header_background_color = "#159957"
+	header_background_color_secondary = "#155799"
 
     # Text colors
     section_headings_color = "#159957"
@@ -52,15 +52,23 @@ title = "Momories"
         tabWidth = 4
 
 [menu]
-	  [[menu.nav]]
+	[[menu.nav]]
         name = "Notes"
         url = "/notes/"
         weight = 1
-        [[menu.nav]]
+#    [[menu.nav]]
+#        name = "Reflections"
+#        url = "/reflections/"
+#        weight = 2
+    [[menu.nav]]
         name = "Tags"
         url = "/tags/"
-        weight = 2
-        [[menu.nav]]
+        weight = 3
+#    [[menu.nav]]
+#        name = "Categories"
+#        url = "/categories/"
+#        weight = 4
+    [[menu.nav]]
         name = "About"
         url = "/about/"
-        weight = 3
+        weight = 5

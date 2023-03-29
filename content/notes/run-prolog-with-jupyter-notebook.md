@@ -19,7 +19,7 @@ sudo apt-get update
 sudo apt-get install swi-prolog
 ```
 
-- 安装 Python3 和 Python3-pip(注：使用 conda 则忽略此步)；
+- 安装 Python3 和 Python3-pip (注：使用 conda 则忽略此步)；
 
 - 安装 `requests` 库和 `notebook` 库；
 
