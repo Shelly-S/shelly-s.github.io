@@ -8,7 +8,7 @@ tags:
 draft: false
 ---
 
-在 Jupyter Notebook 中运行 Prolog 需要安装相应的 kernel，使用的是 [这个实现](https://github.com/hhu-stups/prolog-jupyter-kernel)，环境为 WSL2(Ubuntu22.04.2 LTS) on Win11。
+在 Jupyter Notebook 中运行 Prolog 需要安装相应的 kernel，使用的是 [这个实现](https://github.com/hhu-stups/prolog-jupyter-kernel)，环境为 WSL2 (Ubuntu22.04.2 LTS) on Win11。
 
 - 安装稳定版本 Prolog，参见 [这个链接](https://www.swi-prolog.org/build/PPA.html)；
 

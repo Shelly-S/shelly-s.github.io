@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="generator" content="Hugo 0.111.3">
   
-  <meta name="description" content="在 Jupyter Notebook 中运行 Prolog 需要安装相应的 kernel，使用的是 这个实现，环境为 WSL2(Ubuntu22.04.2 LTS) on Win11。 安装稳定版本 Prolog，参见 这个链接； sudo apt-get install software-properties-common sudo apt-add-repository ppa:swi-prolog/stable sudo apt-get update sudo apt-get install swi-prolog 安装 Python3 和 Python3-pip (注：使用 conda 则忽略此步)； 安装 requests 库和 notebook">
+  <meta name="description" content="在 Jupyter Notebook 中运行 Prolog 需要安装相应的 kernel，使用的是 这个实现，环境为 WSL2 (Ubuntu22.04.2 LTS) on Win11。 安装稳定版本 Prolog，参见 这个链接； sudo apt-get install software-properties-common sudo apt-add-repository ppa:swi-prolog/stable sudo apt-get update sudo apt-get install swi-prolog 安装 Python3 和 Python3-pip (注：使用 conda 则忽略此步)； 安装 requests 库和">
   <link rel="stylesheet" href="https://shelly-s.github.io/css/normalize.css">
   <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
   
@@ -19,29 +19,49 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      displayMath: [['$$','$$'], ['\[','\]']],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-    },
-    startup: {
-      pageReady() {
-        return MathJax.startup.defaultPageReady().then(function () {
-          var all = window.MathJax.startup.document.getMathItemsWithin(document.body), i;
-          for(i = 0; i < all.length; i += 1) {
-            console.log(all[i])
-            all[i].start.node.parentNode.className += ' has-jax';
-          }
-        });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0 && !(code.classList.contains("nolatex")) ) {
+      text = code.textContent;
+      if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+        text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+        code.textContent = text;
+      }
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$(.|\s)+\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  
+        continue;
       }
     }
-  };
-  </script>
+    i++;
+  }
+})();
+</script>
   <title>Run Prolog With Jupyter Notebook | Momories</title>
 </head>
 
@@ -79,8 +99,13 @@
 
   <section class="main-content">
     
-  <h1>Run Prolog With Jupyter Notebook</h1>
-  <p>在 Jupyter Notebook 中运行 Prolog 需要安装相应的 kernel，使用的是 <a href="https://github.com/hhu-stups/prolog-jupyter-kernel">这个实现</a>，环境为 WSL2(Ubuntu22.04.2 LTS) on Win11。</p>
+<main>
+  <article>
+    <header>
+      <h1>Run Prolog With Jupyter Notebook</h1>
+    </header>
+    
+      <p>在 Jupyter Notebook 中运行 Prolog 需要安装相应的 kernel，使用的是 <a href="https://github.com/hhu-stups/prolog-jupyter-kernel">这个实现</a>，环境为 WSL2 (Ubuntu22.04.2 LTS) on Win11。</p>
 <ul>
 <li>安装稳定版本 Prolog，参见 <a href="https://www.swi-prolog.org/build/PPA.html">这个链接</a>；</li>
 </ul>
@@ -107,13 +132,18 @@
 <li>最后新建文件时内核选择 Prolog 即可。</li>
 </ul>
 
+  </article>
+</main>
 
-    <footer class="site-footer">
+    
+  
+ <footer class="site-footer">
   <span class="site-footer-credits">
     
   </span>
 </footer>
 
+  
   </section>
   
   

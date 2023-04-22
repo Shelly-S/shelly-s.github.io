@@ -31,11 +31,18 @@ title = "Momories"
     table_border_color = "#e9ebec"
     hr_border_color = "#eff0f1"
 
+    customCSS = true
+
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
-  
+
+    [markup.tableOfContents]
+        endLevel = 3
+        ordered = false
+        startLevel = 2
+    
     [markup.highlight]
         anchorLineNos = false
         codeFences = true

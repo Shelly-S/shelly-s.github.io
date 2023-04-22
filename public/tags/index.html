@@ -19,29 +19,49 @@
   <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 <script>
-  window.MathJax = {
-    tex: {
-      inlineMath: [['$','$'], ['\\(','\\)']],
-      displayMath: [['$$','$$'], ['\[','\]']],
-      processEscapes: true,
-      processEnvironments: true
-    },
-    options: {
-      skipHtmlTags: ['script', 'noscript', 'style', 'textarea', 'pre']
-    },
-    startup: {
-      pageReady() {
-        return MathJax.startup.defaultPageReady().then(function () {
-          var all = window.MathJax.startup.document.getMathItemsWithin(document.body), i;
-          for(i = 0; i < all.length; i += 1) {
-            console.log(all[i])
-            all[i].start.node.parentNode.className += ' has-jax';
-          }
-        });
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+(function() {
+  var i, text, code, codes = document.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0 && !(code.classList.contains("nolatex")) ) {
+      text = code.textContent;
+      if (/^\$[^$]/.test(text) && /[^$]\$$/.test(text)) {
+        text = text.replace(/^\$/, '\\(').replace(/\$$/, '\\)');
+        code.textContent = text;
+      }
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$(.|\s)+\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  
+        continue;
       }
     }
-  };
-  </script>
+    i++;
+  }
+})();
+</script>
   <title>Tags | Momories</title>
 </head>
 
@@ -91,12 +111,15 @@
     
   </ul>
 
-    <footer class="site-footer">
+    
+  
+ <footer class="site-footer">
   <span class="site-footer-credits">
     
   </span>
 </footer>
 
+  
   </section>
   
   
